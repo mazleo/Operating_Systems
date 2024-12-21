@@ -128,10 +128,900 @@
         {
             "__type__": "Note",
             "fields": [
-                "test",
-                "this is a test"
+                "What is an operating system?",
+                "An operating system is software that manages a computer's hardware and acts as an intermediary between the computer user and the computer hardware. It also provides a basis for application programs."
             ],
-            "guid": "y7Kh___nZ[",
+            "guid": "h]tBmDOBTx",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the four components of a computer system?",
+                "The four components of a computer system are the **hardware**, the **operating system**, the **application programs**, and the **user**."
+            ],
+            "guid": "mRL)XC4^~J",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the role of the operating system?",
+                "The operating system controls the hardware and coordinates its use among the various application programs for the various users. It also provides the means for proper use of resources in the operation of the computer system. It is also a resource allocator."
+            ],
+            "guid": "J`&cq!PO6e",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the user's view of the computer?",
+                "The user's view of the computer varies according to the interface being used. The goal is to maximize the work (or play) that the user is performing. The system is designed for ease of use."
+            ],
+            "guid": "cOTK7>Z5))",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the system's view of the computer?",
+                "From the computer's point of view, the operating system is the program most intricately involved with the hardware. The operating system acts as the manager of resources."
+            ],
+            "guid": "hte*l583vw",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the kernel?",
+                "The kernel is the one program running at all times on the computer. It is usually the first program that is run when a computer is turned on."
+            ],
+            "guid": "JRH8F%ud~H",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are system programs?",
+                "System programs are programs that are associated with the operating system, but are not necessarily part of the kernel."
+            ],
+            "guid": "L9B,L4Szq%",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are application programs?",
+                "Application programs are programs that are not associated with the operation of the system."
+            ],
+            "guid": "Gps7~3/7Jh",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the main components of a general-purpose computer?",
+                "A modern general-purpose computer system consists of one or more CPUs and a number of device controllers connected through a common bus."
+            ],
+            "guid": "g]J#=r_kiw",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a device driver?",
+                "Operating systems have a device driver for each device controller. The device driver understands the device controller and provides the rest of the operating system with a uniform interface to the device."
+            ],
+            "guid": "l<AoxV%p:4",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is an interrupt?",
+                "Hardware may trigger an interrupt by sending a signal to the CPU by way of the system bus. When the CPU is interrupted, it stops what it is doing and immediately transfers execution to a fixed location. The interrupt service routine executes; on completion, the CPU resumes the interrupted computation."
+            ],
+            "guid": "mXT:if;WJR",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the interrupt vector?",
+                "A table of pointers to interrupt routines is called the interrupt vector. These locations hold the addresses of the interrupt service routines for the various devices. An interrupt vector is indexed by a unique number, given with the interrupt request, to provide the address of the interrupt service routine for the interrupting device."
+            ],
+            "guid": "Ep{+vwKr4J",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the two interrupt request lines?",
+                "Most CPUs have two interrupt request lines: **nonmaskable interrupt** and **maskable interrupt**. Nonmaskable interrupts are reserved for unrecoverable memory errors and cannot be turned off by the CPU. Maskable interrupts can be turned off and are used by device controllers to request service."
+            ],
+            "guid": "m8HyP3uNW.",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the purpose of a vectorized interrupt mechanism?",
+                "The purpose of a vectorized interrupt mechanism is to reduce the need for a single interrupt handler to search all possible sources of interrupts to determine which one needs service."
+            ],
+            "guid": "i0=;O:DQk4",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is stored in main memory?",
+                "General-purpose computers must first load the programs they will run into main memory. Main memory is also called random-access memory (RAM)."
+            ],
+            "guid": "t>)@3*~VBr",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a bootstrap program?",
+                "When a computer is powered on, the first program to run is the bootstrap program, which loads the operating system. The bootstrap program is stored in nonvolatile memory, such as electrically erasable programmable read-only memory (EEPROM)."
+            ],
+            "guid": "EJJ/6#EGIz",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the basic units of storage?",
+                "The basic unit of computer storage is the bit, which can have a value of either 0 or 1. A byte is 8 bits. A word is a given computer architecture's native unit of data, which is made up of one or more bytes."
+            ],
+            "guid": "cSxf4;R^a7",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the difference between a kilobyte, megabyte, gigabyte, terabyte, and petabyte?",
+                "A kilobyte (KB) is 1,024 bytes. A megabyte (MB) is 1,024 kilobytes. A gigabyte (GB) is 1,024 megabytes. A terabyte (TB) is 1,024 gigabytes. A petabyte (PB) is 1,024 terabytes."
+            ],
+            "guid": "gc*Xj]soT{",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the von Neumann architecture?",
+                "A typical instruction-execution cycle on a system with a von Neumann architecture first fetches an instruction from memory, then decodes the instruction, and then may execute an operation on operands fetched from memory and stored in an internal register."
+            ],
+            "guid": "pKOs_[Sqpv",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the difference between primary and secondary storage?",
+                "Main memory is usually too small to store all needed programs and data permanently. Computer systems provide secondary storage as an extension of main memory. Main memory is volatile, while secondary storage is nonvolatile."
+            ],
+            "guid": "vL$Dc;K!q[",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are some examples of secondary storage?",
+                "Hard disk drives (HDDs) and nonvolatile memory (NVM) devices are the most common secondary storage devices."
+            ],
+            "guid": "i-X==wUmwl",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is tertiary storage?",
+                "Tertiary storage is slow and large enough that it is only used for special purposes, such as backup copies of material."
+            ],
+            "guid": "q3vw)BwfKr",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the difference between volatile and nonvolatile storage?",
+                "Volatile storage loses its contents when power is removed, while nonvolatile storage retains its contents when power is lost."
+            ],
+            "guid": "dx<bTUzN8D",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are mechanical storage devices?",
+                "Mechanical storage devices include HDDs, optical disks, holographic storage, and magnetic tape."
+            ],
+            "guid": "lxIk:Kw=Z@",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are electrical storage devices?",
+                "Electrical storage devices include flash memory, FRAM, and SRAM."
+            ],
+            "guid": "zC$[pZWNAl",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is Direct Memory Access (DMA)?",
+                "Direct memory access (DMA) is used for bulk data movement. The device controller transfers an entire block of data directly to or from the device and main memory, with no intervention by the CPU."
+            ],
+            "guid": "H}L4V)NLKm",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a core?",
+                "A core is the basic computation unit of the CPU. The core contains the component that executes instructions and registers for storing data locally."
+            ],
+            "guid": "qH2r{K)7EA",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a single-processor system?",
+                "A single-processor system uses a single CPU with a single processing core."
+            ],
+            "guid": "Bgn6m~=1xb",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a multiprocessor system?",
+                "A multiprocessor system has two or more processors, each with a single core. The processors share the computer bus and sometimes the clock, memory, and peripherals. Multicore systems have multiple cores residing on a single chip."
+            ],
+            "guid": "cl.S@J39S[",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is symmetric multiprocessing?",
+                "Symmetric multiprocessing (SMP) systems have each peer CPU perform all tasks, including operating-system functions and user processes. Each CPU has its own set of registers, as well as its own cache."
+            ],
+            "guid": "dGk.%[i<Vm",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is non-uniform memory access (NUMA)?",
+                "In NUMA systems, each CPU has its own local memory, connected by a shared system interconnect. A potential drawback with a NUMA system is increased latency when a CPU must access remote memory across the system interconnect."
+            ],
+            "guid": "f[WK`EMYFc",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a clustered system?",
+                "A clustered system is composed of two or more individual systems or nodes joined together. Clustered systems share storage and are closely linked via a local-area network."
+            ],
+            "guid": "jp5:ut2[ho",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is asymmetric clustering?",
+                "In asymmetric clustering, one machine is in hot-standby mode while the other is running applications. If the active server fails, the hot-standby host becomes the active server."
+            ],
+            "guid": "H4/83r:%2*",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is symmetric clustering?",
+                "In symmetric clustering, two or more hosts are running applications and are monitoring each other."
+            ],
+            "guid": "k9fKls;Pp3",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is parallelization?",
+                "Parallelization divides a program into separate components that run in parallel on individual cores in a computer or computers in a cluster."
+            ],
+            "guid": "z&j;t9QyTt",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a distributed lock manager (DLM)?",
+                "A distributed lock manager (DLM) is used to provide access control and locking to ensure that no conflicting operations occur in a clustered system."
+            ],
+            "guid": "r.|mbKeaIR",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a storage area network (SAN)?",
+                "A storage area network (SAN) allows many systems to attach to a pool of storage."
+            ],
+            "guid": "kfTAd?}zxa",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the bootstrap program's role?",
+                "The bootstrap program must locate the operating-system kernel and load it into memory."
+            ],
+            "guid": "q8N44{6jOo",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a system call?",
+                "A system call is a request from a user program to the operating system to perform tasks on the user program's behalf. A system call is typically treated by the hardware as a software interrupt."
+            ],
+            "guid": "DVGN{1RHg=",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a trap?",
+                "A trap (or an exception) is a software-generated interrupt caused either by an error or by a specific request from a user program. "
+            ],
+            "guid": "z8p`}~S3sR",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is multiprogramming?",
+                "Multiprogramming increases CPU utilization, as well as keeping users satisfied, by organizing programs so that the CPU always has one to execute. In a multiprogrammed system, a program in execution is termed a process."
+            ],
+            "guid": "x<*Gb(gsLs",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is multitasking?",
+                "Multitasking is a logical extension of multiprogramming. In multitasking, the CPU executes multiple processes by switching among them, but the switches occur frequently, providing the user with a fast response time."
+            ],
+            "guid": "&/)(@f7V@",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is CPU scheduling?",
+                "CPU scheduling is the process by which the system chooses which process will run next."
+            ],
+            "guid": "eF{u`w0%+-",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is virtual memory?",
+                "Virtual memory is a technique that allows the execution of a process that is not completely in memory. It abstracts main memory into a large, uniform array of storage, separating logical memory as viewed by the user from physical memory."
+            ],
+            "guid": "pUV<Mr[J,G",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the two modes of operation?",
+                "The two modes of operation are user mode and kernel mode. A bit called the mode bit is added to the hardware of the computer to indicate the current mode."
+            ],
+            "guid": "sA:NZ(p4nY",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a privileged instruction?",
+                "A privileged instruction is an instruction that can only be executed in kernel mode."
+            ],
+            "guid": "JL&wdmyG,j",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a virtual machine manager (VMM)?",
+                "A virtual machine manager (VMM) has more privileges than user processes but fewer than the kernel."
+            ],
+            "guid": "g*<jqQdZOR",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the purpose of a timer?",
+                "A timer is used to ensure that the operating system maintains control over the CPU. A timer can interrupt the computer after a specified period."
+            ],
+            "guid": "N[BF+fK|G,",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a process?",
+                "A process is a program in execution. A process needs certain resources, including CPU time, memory, files, and I/O devices. A process is an active entity."
+            ],
+            "guid": "N^bM^>Zm0x",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a thread?",
+                "A thread is a single-threaded process that has one program counter specifying the next instruction to execute."
+            ],
+            "guid": "dg&}Sd$#kP",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the operating system responsible for in connection with process management?",
+                "The operating system is responsible for creating and deleting both user and system processes, scheduling processes and threads on the CPUs, suspending and resuming processes, providing mechanisms for process synchronization, and providing mechanisms for process communication."
+            ],
+            "guid": "g<3H=YAp/U",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the operating system responsible for in connection with memory management?",
+                "The operating system is responsible for keeping track of which parts of memory are currently being used and which process is using them, allocating and deallocating memory space as needed, and deciding which processes and data to move into memory."
+            ],
+            "guid": "LO3lhub&9$",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the operating system responsible for in connection with file-system management?",
+                "The operating system is responsible for creating and deleting files, creating and deleting directories to organize files, supporting primitives for manipulating files and directories, mapping files onto mass storage, and backing up files on stable (nonvolatile) storage media."
+            ],
+            "guid": "k.seLqG~_m",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the operating system responsible for in connection with secondary storage management?",
+                "The operating system is responsible for mounting and unmounting storage, free-space management, storage allocation, disk scheduling, partitioning, and protection."
+            ],
+            "guid": "k$KwIJ5+u_",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is caching?",
+                "Caching is an important principle in computer systems. Information is normally kept in some storage system (such as main memory). As it is used, it is copied into a faster storage system—the cache—on a temporary basis."
+            ],
+            "guid": "p%31KUra=8",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is cache coherency?",
+                "Cache coherency is the situation where multiple copies of the same data may exist in different caches. If an update to the value of data in one cache is not immediately reflected in all other caches where it resides, inconsistencies can result."
+            ],
+            "guid": "H;GvITu[nX",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the operating system's role in I/O system management?",
+                "The operating system's role in I/O system management is to hide the peculiarities of specific hardware devices from the user. The I/O subsystem consists of a memory-management component, a general device-driver interface, and drivers for specific hardware devices."
+            ],
+            "guid": "w5{joPHdA}",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the purpose of protection?",
+                "Protection is any mechanism for controlling the access of processes or users to the resources defined by a computer system. Protection must provide means to specify the controls to be imposed and to enforce those controls. Protection can improve reliability by detecting latent errors at the interface between component subsystems."
+            ],
+            "guid": "u[!9yOaB`f",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a user ID?",
+                "A user ID is a unique numerical identifier assigned to each user. When a user logs in to the system, the authentication stage determines the appropriate user ID for the user."
+            ],
+            "guid": "g6/_-:t<$=",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a group identifier?",
+                "A group identifier is used to implement sets of users who can be given certain access privileges."
+            ],
+            "guid": "MAm&]i_q8C",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is virtualization?",
+                "Virtualization is a technology that allows us to abstract the hardware of a single computer into several different execution environments, thereby creating the illusion that each execution environment is running on its own private computer."
+            ],
+            "guid": "rc2sFKC=(v",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is emulation?",
+                "Emulation is when a computer simulates computer hardware in software."
+            ],
+            "guid": "FMz=u!G%&z",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a virtual machine?",
+                "A virtual machine is an environment created by virtualization that seems like its own private computer."
+            ],
+            "guid": "dHkCxEX|tB",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a distributed system?",
+                "A distributed system is a collection of physically separate, possibly heterogeneous computer systems that are networked to provide users with access to the various resources that the system maintains."
+            ],
+            "guid": "s>8L?;Ii-Y",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a network operating system?",
+                "A network operating system is an operating system that provides features such as file sharing across the network. A computer running a network operating system acts as an autonomous computer on the network."
+            ],
+            "guid": "vLN=.ryXm*",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a distributed operating system?",
+                "A distributed operating system provides a less autonomous environment. The different computers communicate closely enough to provide the illusion that only a single operating system controls the network."
+            ],
+            "guid": "Pb+WqI)eOu",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a local-area network (LAN)?",
+                "A local-area network (LAN) connects computers within a room, a building, or a campus."
+            ],
+            "guid": "vord5~5`[C",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a wide-area network (WAN)?",
+                "A wide-area network (WAN) usually links buildings, cities, or countries."
+            ],
+            "guid": "kIn$@`N!aY",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a metropolitan-area network (MAN)?",
+                "A metropolitan-area network (MAN) could link buildings within a city."
+            ],
+            "guid": "z.W1$g+kdH",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a personal-area network (PAN)?",
+                "A personal-area network (PAN) is created between a phone and a headset or a smartphone and a desktop computer."
+            ],
+            "guid": "lIKPM3B5Sa",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a linked list?",
+                "A linked list is a data structure in which items are linked to one another."
+            ],
+            "guid": "vj6LI>u(GP",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a stack?",
+                "A stack is a sequentially ordered data structure that uses the last-in, first-out (LIFO) principle for adding and removing items."
+            ],
+            "guid": "d)oc75aOhM",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a queue?",
+                "A queue is a sequentially ordered data structure that uses the first-in, first-out (FIFO) principle."
+            ],
+            "guid": "pT8qO]reDM",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a tree?",
+                "A tree is a data structure that can be used to represent data hierarchically."
+            ],
+            "guid": "P2;zWNnW|N",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a binary search tree?",
+                "A binary search tree requires an ordering between the parent's two children in which left child <= right child."
+            ],
+            "guid": "d&AGA2A)CQ",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a hash function?",
+                "A hash function takes data as its input, performs a numeric operation on the data, and returns a numeric value. This numeric value can then be used as an index into a table to quickly retrieve the data."
+            ],
+            "guid": "vKc*f1i]d>",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a bitmap?",
+                "A bitmap is a string of n binary digits that can be used to represent the status of n items. For example, a 0 can indicate that a resource is available, while a 1 indicates that it is unavailable."
+            ],
+            "guid": "A0=)yQK?Pp",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the client-server model?",
+                "In the client-server model, a server system satisfies requests generated by client systems. The server provides an interface to which a client can send a request to perform an action. The server executes the action and sends the results to the client."
+            ],
+            "guid": "L[+E-x`ft7",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the peer-to-peer model?",
+                "In the peer-to-peer model, clients and servers are not distinguished from one another. Instead, all nodes within the system are considered peers, and each may act as either a client or a server, depending on whether it is requesting or providing a service."
+            ],
+            "guid": "NbZ5<3eNT(",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is cloud computing?",
+                "Cloud computing is a type of computing that delivers computing, storage, and even applications as a service across a network."
+            ],
+            "guid": "O!x@fFjD`x",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a public cloud?",
+                "A public cloud is a cloud available via the Internet to anyone willing to pay for the services."
+            ],
+            "guid": "qQdw9YE8s2",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a private cloud?",
+                "A private cloud is a cloud run by a company for that company's own use."
+            ],
+            "guid": "sg>WDyFqf%",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a hybrid cloud?",
+                "A hybrid cloud is a cloud that includes both public and private cloud components."
+            ],
+            "guid": "JqXL9sCZC(",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is software as a service (SaaS)?",
+                "Software as a service (SaaS) is one or more applications available via the Internet."
+            ],
+            "guid": "K1S4.[G=,q",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is platform as a service (PaaS)?",
+                "Platform as a service (PaaS) is a software stack ready for application use via the Internet."
+            ],
+            "guid": "r%xJx:@N:a",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is infrastructure as a service (IaaS)?",
+                "Infrastructure as a service (IaaS) is servers or storage available over the Internet."
+            ],
+            "guid": "A|U(UT{b){",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are real-time embedded systems?",
+                "Real-time embedded systems are systems in which rigid time requirements have been placed on the operation of a processor or the flow of data."
+            ],
+            "guid": "rVPNNYnESS",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is free and open-source software?",
+                "Free and open-source software is available in source-code format rather than as compiled binary code. Free software is licensed to allow no-cost use, redistribution, and modification. Open-source software does not necessarily offer such licensing."
+            ],
+            "guid": "tMf(Reqk,{",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are some examples of free and open-source operating systems?",
+                "GNU/Linux, FreeBSD, and Solaris are examples of popular open-source systems."
+            ],
+            "guid": "iXBTxE9}7`",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is copyleft?",
+                "Copyleft is a form of licensing invented by Stallman that gives anyone that possesses a copy of the work the four essential freedoms and that requires that the redistribution must preserve these freedoms."
+            ],
+            "guid": "HwhUr&AL,H",
             "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
             "tags": []
         }
