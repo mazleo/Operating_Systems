@@ -1024,6 +1024,306 @@
             "guid": "HwhUr&AL,H",
             "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
             "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the primary purpose of an operating system?",
+                "An operating system provides an **environment** for the execution of programs. It provides services to both users and programs. These services are accessed through an **interface**."
+            ],
+            "guid": "Q0S`wfu-a7",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "List the main services provided by an operating system.",
+                "*   **User Interface:**  Provides ways for users to interact with the system (**GUI**, **CLI**, **touch-screen**).\n*   **Program Execution:** Loads and executes programs.\n*   **I/O Operations:** Manages input/output devices.\n*   **File-system Manipulation:** Creates, deletes, and manages files and directories.\n*   **Communications:** Enables interprocess communication, either locally or across a network.\n*   **Error Detection:** Detects and handles errors.\n*   **Resource Allocation:** Manages resources such as CPU, memory, and storage.\n*   **Logging:** Tracks system usage.\n*   **Protection and Security:** Controls access to resources and ensures data security."
+            ],
+            "guid": "m8o@67YVx|",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the three fundamental types of user interfaces provided by operating systems?",
+                "*   **Command-line Interface (CLI):** Allows users to enter commands directly.\n*   **Graphical User Interface (GUI):** Uses a mouse and icons for interaction.\n*   **Touch-screen Interface:**  Uses touch gestures for interaction."
+            ],
+            "guid": "O8&)1L_/1B",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a \"command interpreter\" or \"shell\"?",
+                "A command interpreter or shell is a program that reads commands entered by the user and executes them by translating them to system calls. It can be a special program that is run when the user logs on. Examples include the **Bourne-Again shell (bash)**, **C shell**, and **Korn shell**."
+            ],
+            "guid": "c+]GV!W(/)",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a system call?",
+                "A system call is a request by a user-level program to access a service provided by the operating system. It provides the interface between a running program and the operating system. System calls are often written in C or C++, but may require assembly language for certain low-level tasks."
+            ],
+            "guid": "u#m$YOwc0",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is an Application Programming Interface (API)?",
+                "An **API** specifies a set of functions that are available to an application programmer, including the parameters and return values that can be expected. An API is a higher-level interface built on top of system calls. The API makes the system calls more convenient for the programmer."
+            ],
+            "guid": "igPju$-4~i",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How are parameters passed during a system call?",
+                "Parameters for system calls can be passed in registers, in a block of memory, or on a stack. **Linux** uses a combination of these approaches."
+            ],
+            "guid": "O1d%Y]bEx0",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the major categories of system calls?",
+                "*   **Process Control**\n*   **File Management**\n*   **Device Management**\n*   **Information Maintenance**\n*   **Communications**\n*   **Protection**"
+            ],
+            "guid": "ijB~TY]C6y",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Give examples of system calls for process control in Windows and Unix.",
+                "*   **Windows:** `CreateProcess()`, `ExitProcess()`, `WaitForSingleObject()`\n*   **Unix:** `fork()`, `exit()`, `wait()`"
+            ],
+            "guid": "K#RtO^Dci~",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a run-time environment (RTE)?",
+                "The **RTE** is the full suite of software needed to execute applications written in a given programming language including compilers, interpreters, libraries, and loaders."
+            ],
+            "guid": "QX:~Q-d=#b",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a \"boot loader\"?",
+                "A boot loader is a small piece of software that loads the operating system kernel into memory when a computer is started. It initializes the system and prepares it for the operating system to take over."
+            ],
+            "guid": "dFKs@!YSDt",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Describe the concept of a \"monolithic\" operating system structure.",
+                "A **monolithic** operating system has **no structure**; all its functionality is contained in a single binary file that runs in a single address space. This approach is simple, but can be difficult to modify or debug. Examples include older versions of **UNIX** and **Linux**."
+            ],
+            "guid": "F|fq:as3zb",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Describe the \"layered\" operating system structure.",
+                "A **layered** operating system is divided into **multiple layers**, where each layer depends only on the layers below it. The bottom layer is the hardware, and the highest layer is the user interface. This approach simplifies debugging and system verification."
+            ],
+            "guid": "PyRm)LPb/W",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Describe the \"microkernel\" operating system structure.",
+                "A **microkernel** aims to keep the kernel as small as possible, with most operating system services running as user-level processes. This approach improves modularity and security. Communication between processes is typically done using **message passing**."
+            ],
+            "guid": "cv)?yL1%JI",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are \"loadable kernel modules\"?",
+                "**Loadable kernel modules (LKMs)** are a way of adding functionality to the operating system kernel at runtime. This approach allows for dynamic modification of the kernel without requiring a reboot. This is a modular approach."
+            ],
+            "guid": "BV}I:$:#eY",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a \"hybrid\" operating system?",
+                "A **hybrid** system combines different architectural approaches, such as monolithic and microkernel. For example, **Linux** is monolithic, but also supports loadable kernel modules."
+            ],
+            "guid": "P@7/TZ{P[j",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the difference between mechanism and policy in operating system design?",
+                "**Mechanism** refers to *how* something is done. **Policy** refers to *what* is done. It is good to separate them for flexibility. A mechanism can implement different policies."
+            ],
+            "guid": "m1K2h6=VuL",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Why is it important to write an operating system in a high-level language?",
+                "Writing in high-level languages like **C** or **C++** makes the code faster to write, more compact, and easier to understand and debug. It also makes the system easier to port to other hardware."
+            ],
+            "guid": "tQ$(7RK+c!",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the purpose of the \"linker\" in the build process?",
+                "The linker combines relocatable object files into a single binary executable file."
+            ],
+            "guid": "AMor[uJ1vS",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the purpose of the \"loader\" in the build process?",
+                "The loader loads the executable file into memory, making it ready to run."
+            ],
+            "guid": "B##F[5p<`s",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the main reasons why applications are operating-system specific?",
+                "*   Different binary formats for program executables.\n*   Different instruction sets for different CPUs.\n*   Different system calls."
+            ],
+            "guid": "ze~CY%JB2J",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is an Application Binary Interface (ABI)?",
+                "An **ABI** defines how different components of binary code can interface for a given operating system on a given architecture. It includes details about data types, register usage, and how parameters are passed in system calls."
+            ],
+            "guid": "m@*MpbJQbs",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the two primary goals in designing an operating system?",
+                "*   **User goals:** The system should be convenient to use, easy to learn, reliable, safe, and fast.\n*   **System goals:** The system should be easy to design, implement, maintain, and should be flexible, reliable, error-free, and efficient."
+            ],
+            "guid": "uM62NcM$u$",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the typical process for building and booting an operating system?",
+                "1.  Write the operating system source code.\n2.  Configure the operating system.\n3.  Compile the operating system.\n4.  Install the operating system.\n5.  Boot the computer."
+            ],
+            "guid": "pbYkg}UfY7",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is \"system generation\" or \"system build\"?",
+                "It's the process of configuring an operating system. It specifies which features are included, and varies the configuration based on the system for which the operating system is being built."
+            ],
+            "guid": "HXaHQatq$V",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a \"bootstrap program\"?",
+                "A small piece of code that locates the operating system kernel and loads it into memory. It is also known as the **boot loader**."
+            ],
+            "guid": "p9$t1v8T-S",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is \"debugging\" in the context of operating systems?",
+                "Debugging is the process of identifying and fixing errors in both the hardware and the software of a system. It includes failure analysis and performance tuning."
+            ],
+            "guid": "whj%n|#6VO",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are \"counters\" in operating system debugging and performance tuning?",
+                "Counters are a collection of system-wide or per-process statistics. They keep track of system activity, such as the number of system calls made, or the number of operations on a disk or network."
+            ],
+            "guid": "IWzR4j-jG1",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is \"tracing\" in operating system debugging and performance tuning?",
+                "Tracing involves following the execution of a program, often using system-call invocations, to identify bottlenecks or other performance issues."
+            ],
+            "guid": "wPo=MA3-rh",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the BCC (BPF Compiler Collection)?",
+                "**BCC** is a toolkit for dynamic kernel tracing in **Linux**. It's written in Python, embeds C code, and interfaces with **eBPF**. This tool helps to debug interactions between the user-level and kernel code."
+            ],
+            "guid": "egM,~P3b-M",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
         }
     ],
     "reviewLimit": null,
