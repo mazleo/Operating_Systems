@@ -1473,6 +1473,246 @@
             "guid": "sY0kl*<PQj",
             "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
             "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a **thread**?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A thread is&nbsp;</span>{{c1::a basic unit of **CPU** utilization}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. It has a&nbsp;</span>{{c2::**thread ID**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, a&nbsp;</span>{{c3::**program counter**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, a&nbsp;</span>{{c4::**register set**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, and a&nbsp;</span>{{c5::**stack**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. Threads share&nbsp;</span>{{c6::code}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">,&nbsp;</span>{{c7::data}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, and&nbsp;</span>{{c8::OS resources}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;with other threads in the same process.</span>",
+                ""
+            ],
+            "guid": "k6`?[xU$D",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the difference between a **single-threaded** and a **multithreaded** process?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A **single-threaded** process has one thread of control, while a **multithreaded** process has multiple threads, enabling it to perform multiple tasks **concurrently**.</span>"
+            ],
+            "guid": "LRNg&5hZg}",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is **parallelism** and **concurrency**?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">- **Parallelism** is&nbsp;</span>{{c1::when multiple threads execute simultaneously on multiple CPU cores}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\"><br>- **Concurrency** is&nbsp;</span>{{c2::when multiple threads make progress without necessarily running at the same time}}",
+                ""
+            ],
+            "guid": "QfzN]BOM4)",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are the four main benefits of **multithreading**?<br></span><br><div>- {{c1::**Responsiveness**: Programs remain responsive even if parts are blocked.}}</div><div>- {{c2::**Resource Sharing**: Threads share memory and resources, making it easier to share data.}}</div><div>- {{c3::**Economy**: Creating threads is more efficient than creating processes.}}</div><div>- {{c4::**Scalability**: Threads can take advantage of multicore architectures.}}</div>",
+                ""
+            ],
+            "guid": "b!=4B],Kr%",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is **multicore programming**?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Multicore programming**&nbsp;</span>{{c1::utilizes multiple computing cores on a single chip to execute threads in parallel}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. It presents challenges like&nbsp;</span>{{c2::identifying tasks}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">,&nbsp;</span>{{c3::load balancing}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">,&nbsp;</span>{{c4::data splitting}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">,&nbsp;</span>{{c5::dependency management}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, and&nbsp;</span>{{c6::testing}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "rX`jG>[8jY",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is **Amdahl's Law**, and what does it tell us?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Amdahl's Law** provides&nbsp;</span>{{c1::a formula to calculate potential speedup from adding cores}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">:&nbsp;</span>{{c2::`speedup &lt;= 1 / (S + (1-S)/N)`}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, where `S` is&nbsp;</span>{{c3::the serial portion of the program}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, and `N` is&nbsp;</span>{{c4::the number of cores}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. It highlights that&nbsp;</span>{{c5::the **serial portion limits speedup**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "BUOs8^|rJ=",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the difference between **data parallelism** and **task parallelism**?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Data parallelism**&nbsp;</span>{{c1::distributes subsets of data across cores}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, while **task parallelism**&nbsp;</span>{{c2::distributes different tasks across cores}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "J5;);AR52w",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are **user threads** and **kernel threads**?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**User threads** are&nbsp;</span>{{c1::managed above the kernel}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, while **kernel threads** are&nbsp;</span>{{c2::managed directly by the OS}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "L-Hx2OqD~7",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are the three main **multithreading models**?<br></span><br><div>- {{c1::**Many-to-one:** Many user threads map to one kernel thread.}}</div><div>- {{c2::**One-to-one:** Each user thread maps to a kernel thread.}}</div><div>- {{c3::**Many-to-many:** Many user threads map to a smaller or equal number of kernel threads.}}</div><div>- A variation is the {{c4::**two-level model**, which allows a user-level thread to be bound to a kernel thread.}}</div>",
+                ""
+            ],
+            "guid": "ozV$<k<<5c",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a **thread library**?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A thread library&nbsp;</span>{{c1::provides an **API** for creating and managing threads}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. It can be implemented in&nbsp;</span>{{c2::user space}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;or&nbsp;</span>{{c3::as a kernel-level library}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. Examples include&nbsp;</span>{{c4::**Pthreads**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">,&nbsp;</span>{{c5::**Windows threads**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, and&nbsp;</span>{{c6::**Java threads**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "yy;M&P{>aF",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are the two primary strategies for creating multiple threads using thread libraries?<br></span><br>{{c1::- **Asynchronous threading**, where the parent and child threads execute independently}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\"><br></span>{{c2::- **Synchronous threading**, where the parent waits for the child to complete.}}",
+                ""
+            ],
+            "guid": "P{aEa>)[@>",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is **implicit threading**?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Implicit threading** transfers thread creation and management to compilers and runtime libraries.</span>"
+            ],
+            "guid": "fZtZfT.^eT",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are **thread pools**?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Thread pools** create a set of threads at start-up that wait for work, reducing the overhead of creating new threads.</span>"
+            ],
+            "guid": "xY^>*9z.a*",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the **fork-join strategy**?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A parent thread creates child threads (**fork**) and waits for them to complete and combine their results (**join**).</span>"
+            ],
+            "guid": "tYdgaUbd8>",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is **OpenMP**?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**OpenMP** is a set of compiler directives and an **API** that supports parallel programming in shared memory environments.</span>"
+            ],
+            "guid": "vFcqg,yei=",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is **</span>{{c1::Grand Central Dispatch}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;(GCD)**?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**GCD** is&nbsp;</span>{{c2::an Apple technology that manages the scheduling of tasks on dispatch queues}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, supporting&nbsp;</span>{{c3::serial}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;and&nbsp;</span>{{c4::concurrent}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;execution.</span>",
+                ""
+            ],
+            "guid": "m>U0lc!*#/",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are **Intel Threading Building Blocks (TBB)**?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**TBB** is a template library for designing parallel applications in C++.</span>"
+            ],
+            "guid": "wWWk4x>MX-",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">How do the `fork()` and `exec()` system calls behave in multithreaded programs?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">The behavior of `fork()`&nbsp;</span>{{c1::depends on the application}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, while `exec()`&nbsp;</span>{{c2::replaces the entire process including all threads}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "s12I8<j.FW",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are **signals** in UNIX systems?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Signals**&nbsp;</span>{{c1::notify a process of an event}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">; they can be&nbsp;</span>{{c2::synchronous}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;or&nbsp;</span>{{c3::asynchronous}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;and handled by&nbsp;</span>{{c4::a default}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;or&nbsp;</span>{{c5::user-defined}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;</span>{{c6::signal handler}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "hW?szn>?p3",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is **thread cancellation**?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Thread cancellation** is&nbsp;</span>{{c1::terminating a thread before completion}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. It can be&nbsp;</span>{{c2::asynchronous}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;or&nbsp;</span>{{c3::deferred}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "IqnujxBT5|",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is **thread-local storage (TLS)**?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**TLS** provides each thread with its own copy of certain data.</span>"
+            ],
+            "guid": "s|6;^OyVm3",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are **scheduler activations**?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Scheduler activations** coordinate communication between the user-thread library and the kernel, adjusting the number of kernel threads for optimal performance.</span>"
+            ],
+            "guid": "MvjM{@Zy^a",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">How does **Windows** implement threads?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Windows** uses a **one-to-one mapping** between user-level threads and kernel threads.</span>"
+            ],
+            "guid": "KI%*M`Yu,R",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">How does **Linux** implement threads?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Linux** refers to both processes and threads as **tasks**, using the `clone()` system call to create tasks that behave like either processes or threads.</span>"
+            ],
+            "guid": "z|bHJb$#Ww",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
         }
     ],
     "reviewLimit": null,
