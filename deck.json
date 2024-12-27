@@ -62,8 +62,590 @@
     "name": "Operating Systems",
     "newLimit": null,
     "newLimitToday": null,
-    "note_models": [],
-    "notes": [],
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "css": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n.cloze {\n    font-weight: bold;\n    color: blue;\n}\n.nightMode .cloze {\n    color: lightblue;\n}\n",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "name": "Text",
+                    "ord": 0,
+                    "plainText": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "name": "Back Extra",
+                    "ord": 1,
+                    "plainText": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Cloze",
+            "originalStockKind": 5,
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "{{cloze:Text}}<br>\n{{Back Extra}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Cloze",
+                    "ord": 0,
+                    "qfmt": "{{cloze:Text}}"
+                }
+            ],
+            "type": 1
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "css": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "name": "Front",
+                    "ord": 0,
+                    "plainText": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "name": "Back",
+                    "ord": 1,
+                    "plainText": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic",
+            "originalStockKind": 1,
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Front}}"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is an operating system?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">An operating system is&nbsp;</span>{{c1::software<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\"> that manages a computer's hardware</span>}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;and&nbsp;</span>{{c2::acts as an intermediary between the computer user and the computer hardware}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. It provides a basis for&nbsp;</span>{{c3::application programs}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;and is responsible for allocating resources such as the&nbsp;</span>{{c4::CPU}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">,&nbsp;</span>{{c5::memory}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, and&nbsp;</span>{{c6::I/O devices}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "qA`N]vjQeT",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the four main components of a computer system?<br><br>The four main components are:<br><ul><li>{{c1::Hardware}}: {{c5::the CPU, memory, and I/O devices}}</li><li>{{c2::Operating system}}: {{c6::controls and coordinates the use of hardware among various application programs and users}}</li><li>{{c3::Application programs}}: {{c7::such as word processors, compilers, and web browsers, define how system resources are used to solve users' computing problems}}</li><li>{{c4::Users}}: {{c8::interact with the system}}</li></ul>",
+                ""
+            ],
+            "guid": "c[RC=V$y&_",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Describe the user's view of the computer system.<br><br>The user's view {{c1::varies depending on the interface being used}}. The goal from the user perspective is to {{c2::maximize the work (or play) they can accomplish}}, with a focus on {{c3::ease of use}}, {{c4::performance}}, and {{c5::security}}. Users are generally not concerned with how the hardware and software resources are shared.",
+                ""
+            ],
+            "guid": "PG#n2;_at<",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Describe the system's view of the operating system.<br><b><br></b>From the computer's point of view, the operating system is a {{c1::resource allocator}}&nbsp;and a {{c2::control program}}. As a {{c1::resource allocator}}, the operating system {{c1::manages resources}} such as {{c3::CPU time}}, {{c4::memory space}}, and {{c5::I/O devices}}, allocating them to specific programs and users. As a {{c2::control program}}, it manages the {{c6::execution of user programs to prevent errors and improper use of the computer, especially regarding I/O devices}}.",
+                ""
+            ],
+            "guid": "ro{avW?8=R",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the kernel?",
+                "The kernel is the one program running at all times on the computer. The kernel is part of the operating system, but the operating system includes other programs."
+            ],
+            "guid": "dm|S2&&[0+",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the role of a device driver?",
+                "An operating system has a device driver for each device controller. The device driver provides a uniform interface to the device for the rest of the operating system."
+            ],
+            "guid": "r)Y?UV+%.,",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Explain how an interrupt works.<br><br><ul><li>{{c1::Hardware triggers an interrupt by sending a signal to the CPU.&nbsp;}}</li><li>{{c2::The CPU then stops what it is doing, and transfers execution to a fixed location that contains the starting address of the interrupt service routine.&nbsp;}}</li><li>{{c3::After completion of the service routine, the CPU resumes computation as if the interrupt had not occurred.}}</li></ul>Interrupts are a key way in which hardware interacts with the operating system.<br>",
+                ""
+            ],
+            "guid": "j;(|V8L2WP",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is an interrupt vector?",
+                "An interrupt vector is an array or table of addresses of the interrupt service routines for the various devices. Each address is indexed by a unique number given with the interrupt request."
+            ],
+            "guid": "B_o3f1|t8a",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the two types of interrupt requests?<br><br>There are two interrupt request lines:<br><br><ul><li>{{c1::Nonmaskable interrupts}}: {{c3::Reserved for events such as unrecoverable memory errors}}</li><li>{{c2::Maskable interrupts}}: {{c4::Can be turned off by the CPU before the execution of critical instruction sequences that must not be interrupted.}}</li></ul>",
+                ""
+            ],
+            "guid": "ETVivrUL?[",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the purpose of the interrupt mechanism?",
+                "The purpose is to reduce the need for a single interrupt handler to search all possible sources of interrupts. The interrupt mechanism also implements a system of interrupt priority levels."
+            ],
+            "guid": "exE^@j-SVY",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is main memory?",
+                "Main memory, also known as random-access memory (RAM), is where programs are loaded to be executed. It is volatile, meaning its contents are lost when power is turned off."
+            ],
+            "guid": "Z2co0zmT]",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a bootstrap program?",
+                "A bootstrap program is the first program that runs on computer power-up. It loads the operating system into memory."
+            ],
+            "guid": "n26~~_2{rG",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the units of storage?<br><br><ul><li>{{c1::A bit is the basic unit, representing 0 or 1.}}<br></li><li>{{c2::A byte is typically 8 bits.}}<br></li><li>{{c3::A word is a given computer architecture's native unit of data, made up of one or more bytes.}}<br></li></ul>",
+                ""
+            ],
+            "guid": "f3wR)!|[kJ",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is secondary storage?<br><br>{{c1::Secondary storage is non-volatile storage that can hold large quantities of data permanently}}. {{c2::Hard-disk drives (HDDs)}} and {{c3::nonvolatile memory (NVM)}} devices are the most common forms. Secondary storage is {{c4::slower than main memory}}.",
+                ""
+            ],
+            "guid": "y$*<{Ue<qk",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is tertiary storage?",
+                "Tertiary storage is slow and large, used for special purposes like backup copies on devices like magnetic tape."
+            ],
+            "guid": "lu3u;F@<c5",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is volatile storage?",
+                "Volatile storage loses its content when power is removed. Main memory is an example of volatile storage."
+            ],
+            "guid": "iH`,%-+=N8",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is non-volatile storage (NVS)?",
+                "Non-volatile storage retains its contents when power is lost. Secondary storage such as hard drives and flash memory are examples of non-volatile storage."
+            ],
+            "guid": "iP>3nud$6R",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is direct memory access (DMA)?",
+                "DMA is used for bulk data movement, where a device controller transfers data directly to or from main memory without CPU intervention, which reduces overhead."
+            ],
+            "guid": "r7J<|<@IXF",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a single-processor system?",
+                "A single-processor system uses only one general-purpose CPU. Special-purpose processors can also exist in these systems, but they are not for general use."
+            ],
+            "guid": "bp5]:1F}ax",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a multiprocessor system?",
+                "A multiprocessor system has two or more processors that share the computer bus, memory, and peripheral devices. There are symmetric and non-uniform memory access multiprocessors."
+            ],
+            "guid": "h8`|o;7{U!",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is symmetric multiprocessing (SMP)?",
+                "In SMP, each processor performs all tasks."
+            ],
+            "guid": "Q.a9+,qdys",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a core?",
+                "A core is the basic computation unit of the CPU. A multicore CPU has multiple cores on the same chip."
+            ],
+            "guid": "LWGd<Dr;c&",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is non-uniform memory access (NUMA)?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">In NUMA, each CPU has its own local memory, and CPUs are connected via an interconnect. Accessing remote memory is slower.</span>"
+            ],
+            "guid": "K9`-UpQWE*",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a clustered system?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A clustered system is composed of two or more individual systems (nodes) that are loosely coupled. They share storage and are connected via a local-area network (LAN).</span>"
+            ],
+            "guid": "20S/YD6Oq",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is asymmetric clustering?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">In asymmetric clustering, one machine is in hot-standby while the other is running the applications. If the active server fails, the hot-standby host becomes the active server.</span>"
+            ],
+            "guid": "vW(&?<&I6@",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is symmetric clustering?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">In symmetric clustering, two or more hosts are running applications and monitoring each other.</span>"
+            ],
+            "guid": "PNhki:D>Dn",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is parallelization?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Parallelization is a technique that divides a program into separate components that can run concurrently on different processors or computers in a cluster.</span>"
+            ],
+            "guid": "Gdv/jH`k2#",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a distributed lock manager (DLM)?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A DLM is used in some clustered systems to ensure that only one process has access to a particular piece of data at any time.</span>"
+            ],
+            "guid": "gJzD_)|T;2",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the bootstrap process?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">When a computer is powered on, a bootstrap program is loaded from firmware. The program initializes all aspects of the system, loads the operating system kernel into memory, and starts system services, allowing the system to become fully booted.</span>"
+            ],
+            "guid": "ruG7bbJxUl",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a trap or exception?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A trap or exception is a software-generated interrupt caused by an error, such as division by zero or invalid memory access.</span>"
+            ],
+            "guid": "u2K~TCB.Fz",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a system call?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A system call is a request from a user program to the operating system to perform a specific task.</span>"
+            ],
+            "guid": "z=!:y8ZG10",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is multiprogramming?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Multiprogramming increases CPU utilization by organizing jobs so that the CPU always has one to execute.</span>"
+            ],
+            "guid": "KSeys0g.nV",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is multitasking?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Multitasking is a logical extension of multiprogramming where the CPU switches between processes frequently to provide a fast response to the user.</span>"
+            ],
+            "guid": "n@R@%rW|yB",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is CPU scheduling?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">CPU scheduling is the process of choosing which process will run next.</span>"
+            ],
+            "guid": "wEg^9dy%sc",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is virtual memory?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Virtual memory allows programs to be larger than physical memory by abstracting main memory into a uniform array of storage.</span>"
+            ],
+            "guid": "i^^pc`hrMv",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the two modes of operation?<br><br>The two modes of operation are:<br><ul><li>{{c1::<strong>User mode:</strong> where user applications run.}}<br></li><li>{{c2::<strong>Kernel mode (also called supervisor mode, system mode, or privileged mode):</strong> where the operating system runs.&nbsp;}}<br></li></ul>{{c3::A mode bit indicates which mode the system is in.}}<br>",
+                ""
+            ],
+            "guid": "n!.e[-VzDX",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are privileged instructions?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Privileged instructions can only be executed in kernel mode to ensure the proper operation of the system. Examples include I/O control, timer management, and interrupt management.</span>"
+            ],
+            "guid": "A7%-?AmtIE",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a timer?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A timer can be set to interrupt the computer after a specified period. It is used to maintain control over the CPU and prevent a program from getting stuck in an infinite loop.</span>"
+            ],
+            "guid": "Qa}u4kWgj{",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a process?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A process is a program in execution and is the unit of work in a system. A process needs resources, including CPU time, memory, and I/O devices, to execute.</span>"
+            ],
+            "guid": "Mhr<~#nO}T",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are the responsibilities of the operating system with respect to process management?<br></span><br>The operating system is responsible for:<br><ul><li>{{c1::Creating and deleting user and system processes}}</li><li>{{c2::Scheduling processes and threads on the CPUs}}</li><li>{{c3::Suspending and resuming processes}}</li><li>{{c4::Providing mechanisms for process synchronization}}</li><li>{{c5::Providing mechanisms for process communication}}</li></ul>",
+                ""
+            ],
+            "guid": "k@:C@|n,qP",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the operating system responsible for in regards to memory management?<br></span><br>The operating system is responsible for:<br><ul><li>{{c1::Keeping track of which parts of memory are currently being used and by whom}}</li><li>{{c2::Allocating and deallocating memory space as needed}}</li><li>{{c3::Deciding which processes and data to move into and out of memory}}</li></ul>",
+                ""
+            ],
+            "guid": "OC-qxt7CcY",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the operating system responsible for in regards to file-system management?<br></span><br>The operating system is responsible for:<br><ul><li>{{c1::Creating and deleting files}}</li><li>{{c2::Creating and deleting directories to organize files}}</li><li>{{c3::Supporting primitives for manipulating files and directories}}</li><li>{{c4::Mapping files onto mass storage}}</li><li>{{c5::Backing up files on stable storage media}}</li></ul>",
+                ""
+            ],
+            "guid": "gaXYI.dsCo",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the operating system responsible for in regards to mass-storage management?<br></span><br>The operating system is responsible for:<br><ul><li>{{c1::Mounting and unmounting storage}}</li><li>{{c2::Free space management}}</li><li>{{c3::Storage allocation}}</li><li>{{c4::Disk scheduling}}</li><li>{{c5::Partitioning}}</li><li>{{c6::Protection}}</li></ul>",
+                ""
+            ],
+            "guid": "i=T3:f9v3g",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is caching?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Caching involves copying information into a faster storage system, the cache, on a temporary basis. It speeds up access to frequently used data.</span>"
+            ],
+            "guid": "nskCmDqq8A",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the I/O subsystem?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">The I/O subsystem is responsible for&nbsp;</span>{{c1::managing I/O operations}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. It includes a&nbsp;</span>{{c2::memory-management component}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, a&nbsp;</span>{{c3::general device-driver interface}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, and&nbsp;</span>{{c4::drivers for specific hardware devices}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "f^Y>q2`P?`",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the key aspects of a computer system in terms of security and protection?<br><b><br></b>A system must provide {{c1::protection}} by {{c2::controlling access to system resources}}, while {{c3::security}} involves {{c4::defending the system from internal and external attacks}}. {{c3::Security}} also involves {{c5::maintaining a list of user names and associated user IDs, or group identifiers}}.",
+                ""
+            ],
+            "guid": "CUHRaOH4lT",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        }
+    ],
     "reviewLimit": null,
     "reviewLimitToday": null
 }
