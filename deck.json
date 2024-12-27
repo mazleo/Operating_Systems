@@ -58,7 +58,16 @@
     "dyn": 0,
     "extendNew": 0,
     "extendRev": 0,
-    "media_files": [],
+    "media_files": [
+        "_auto-render.js",
+        "_highlight.css",
+        "_highlight.js",
+        "_katex.css",
+        "_katex.min.js",
+        "_markdown-it-mark.js",
+        "_markdown-it.min.js",
+        "_mhchem.js"
+    ],
     "name": "Operating Systems",
     "newLimit": null,
     "newLimitToday": null,
@@ -182,6 +191,126 @@
                 }
             ],
             "type": 0
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "css": "\n\n.card {\n  font-family: arial;\n  font-size: 20px;\n  color: black;\n  background-color: white;\n}\ntable, th, td {\n\tborder: 1px solid black;\n\tborder-collapse: collapse;\n}\n#front, #back, #extra {\n\tvisibility: hidden;\n}\npre code {\n  background-color: #eee;\n  border: 1px solid #999;\n  display: block;\n  padding: 20px;\n  overflow: auto;\n}\n",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "name": "Front",
+                    "ord": 0,
+                    "plainText": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "name": "Back",
+                    "ord": 1,
+                    "plainText": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "KaTeX and Markdown Basic",
+            "originalStockKind": 1,
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<hr id=answer>\n\n<div id=\"back\"><pre>{{Back}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n\t\tgetScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss_online.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\trenderMath(\"back\");\n\t\tmarkdown(\"back\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t\tdocument.getElementById(\"back\").style.visibility = \"visible\";\n\t}\n\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n                        throwOnError : false\n\t\t});\n\t}\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "KaTeX and Markdown Basic",
+                    "ord": 0,
+                    "qfmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n                getScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t}\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n            throwOnError : false\n\t\t});\n\t}\n\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n"
+                }
+            ],
+            "type": 0
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "css": "\n\n.card {\n  font-family: arial;\n  font-size: 20px;\n  color: black;\n  background-color: white;\n}\ntable, th, td {\n\tborder: 1px solid black;\n\tborder-collapse: collapse;\n}\n#front, #back, #extra {\n\tvisibility: hidden;\n}\npre code {\n  background-color: #eee;\n  border: 1px solid #999;\n  display: block;\n  padding: 20px;\n  overflow: auto;\n}\n",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "name": "Text",
+                    "ord": 0,
+                    "plainText": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "name": "Back Extra",
+                    "ord": 1,
+                    "plainText": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "KaTeX and Markdown Cloze",
+            "originalStockKind": 1,
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "\n\n<div id=\"back\"><pre>{{cloze:Text}}</pre></div><br>\n<div id=\"extra\"><pre>{{Back Extra}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n\t\tgetScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss_online.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\n\tfunction render() {\n\t\trenderMath(\"back\");\n\t\tmarkdown(\"back\");\n\t\trenderMath(\"extra\");\n\t\tmarkdown(\"extra\");\t\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"back\").style.visibility = \"visible\";\n\t\tdocument.getElementById(\"extra\").style.visibility = \"visible\";\n\t}\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n                        throwOnError : false\n\t\t});\n\t}\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "KaTeX and Markdown Cloze",
+                    "ord": 0,
+                    "qfmt": "\n\n<div id=\"front\"><pre>{{cloze:Text}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n\t\tgetScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss_online.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\tshow();\n\t}\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t}\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n                        throwOnError : false\n\t\t});\n\t}\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n"
+                }
+            ],
+            "type": 1
         }
     ],
     "notes": [
@@ -1033,6 +1162,316 @@
             ],
             "guid": "nrc~~M%4Ou",
             "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are the different parts of a process in memory?<br></span><br>A process in memory is divided into multiple sections:<br><ul><li>{{c1::<strong>Text Section:</strong> The executable code}}<br></li><li>{{c2::<strong>Data Section:</strong> Global variables}}<br></li><li>{{c3::<strong>Heap Section:</strong> Dynamically allocated memory during run time}}<br></li><li>{{c4::<strong>Stack Section:</strong> Temporary data storage when invoking functions}}<br></li></ul>",
+                ""
+            ],
+            "guid": "F_iWW|$:|_",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the difference between a program and a process?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A program is a </span><strong>passive entity</strong><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\"> stored on disk as an executable file. A process is an </span><strong>active entity</strong><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\"> with a program counter specifying the next instruction to execute, and a set of associated resources.</span>"
+            ],
+            "guid": "w@,xo8(qap",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are the different states a process can be in?<br></span><br>A process can be in one of the following states:<br><ul><li>{{c1::<strong>New:</strong> The process is being created}}<br></li><li>{{c2::<strong>Running:</strong> Instructions are being executed}}<br></li><li>{{c3::<strong>Waiting:</strong> The process is waiting for some event to occur, such as I/O completion or a signal}}<br></li><li>{{c4::<strong>Ready:</strong> The process is waiting to be assigned to a processor}}<br></li><li>{{c5::<strong>Terminated:</strong> The process has finished execution}}<br></li></ul>",
+                ""
+            ],
+            "guid": "ptH#&U1W>1",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a Process Control Block (PCB)?<br><br>A PCB is {{c1::a data structure in the operating system that represents a process}}. It contains information associated with a specific process, such as the {{c2::process state}}, {{c3::program counter}}, {{c4::CPU registers}}, {{c5::memory management information}}, and {{c6::I/O status information}}. The PCB serves as a repository for all the data needed to {{c7::start, restart, or process}}.",
+                ""
+            ],
+            "guid": "w62:;rqVq^",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is process scheduling?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Process scheduling is the activity of the operating system that manages the execution of processes. The objective of multiprogramming is to have some process running at all times to maximize CPU utilization. The </span><strong>process scheduler</strong><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\"> selects an available process to run on the CPU.</span>"
+            ],
+            "guid": "m^3Wb>=x}|",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a context switch?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A context switch is the mechanism by which the operating system switches the CPU from one process to another. It involves saving the current state of the CPU and loading the saved state of the new process scheduled to run. The context is represented in the PCB.</span>"
+            ],
+            "guid": "LRJF`lZ}]+",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is swapping?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Swapping is a memory management technique where a process is moved from memory to disk (**swapped out**) and later back to memory (**swapped in**). This is done to free up memory when it is overcommitted.</span>"
+            ],
+            "guid": "MU&s.HJ0%!",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">How are new processes created?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">New processes are typically created by an existing process, called the **parent process**. The newly created processes are called **child processes**. The parent process can either execute concurrently with its children or wait until some or all of its children have terminated. In UNIX systems, the **fork()** system call is used to create a new process. In Windows, the **CreateProcess()** function is used.</span>"
+            ],
+            "guid": "wkuasHjeZ+",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a process identifier (pid)?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A pid is a unique integer number that identifies a process within the operating system. It is used as an index to access various attributes of a process within the kernel.</span>"
+            ],
+            "guid": "Q7kj.o[i1N",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the `init` or `systemd` process?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">The `init` or `systemd` process is the **root parent process** of all processes in the system. It is the first process created when the system boots.</span>"
+            ],
+            "guid": "k#GG6f(iO*",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div>What are the different types of process termination?</div><div>A process can terminate by:</div><div>{{c1::*   Executing its final statement and asking the operating system to delete it via the **exit()** system call}}</div><div>{{c2::*   Being terminated by another process via the **TerminateProcess()** system call (in Windows)}}</div><div>{{c3::*   Being terminated by its parent process}}</div><div>{{c4::*   When a parent process terminates, its children may be terminated by the operating system, which is known as **cascading termination**.}}</div>",
+                ""
+            ],
+            "guid": "PPlc&4Mzz~",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a zombie process?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A zombie process is a process that has terminated, but whose parent has not yet called **wait()**. The process's resources are deallocated, but its entry in the process table remains.</span>"
+            ],
+            "guid": "O!3]lhS}8=",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div>What are the different process classifications in Android?</div><div>Android classifies processes based on their importance:</div><div>{{c1::*   **Foreground process**: The current process visible on the screen and the one the user is interacting with.}}</div><div>{{c2::*   **Visible process**: A process that is not directly on the foreground but is performing an activity the user is aware of.}}</div><div>{{c3::*   **Service process**: A process that provides a service, such as streaming music, but is not directly apparent to the user.}}</div><div>{{c4::*   **Background process**: A process that is running in the background without the user's direct interaction.}}</div><div>{{c5::*   **Empty process**: A process that holds no active components.}}</div>",
+                ""
+            ],
+            "guid": "rHa2T,P_0D",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is interprocess communication (IPC)?</span>",
+                "<div>IPC is a mechanism that allows processes to communicate and exchange data with each other. Processes can be either independent or cooperating. Cooperating processes can share information, speed up computation, and have modular system construction.</div>"
+            ],
+            "guid": "B7KlC3~ZwA",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div>What are the two fundamental models of IPC?</div><div>The two fundamental models of IPC are:</div><div>{{c1::*   **Shared memory**: A region of memory is shared by cooperating processes, where they exchange data by reading and writing.}}</div><div>{{c2::*   **Message passing**: Processes communicate by exchanging messages.}}</div>",
+                ""
+            ],
+            "guid": "f4pT2.jMt,",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a bounded buffer?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A bounded buffer is a buffer with a fixed size, used in the producer-consumer problem. If the buffer is full, the producer must wait until the consumer has consumed some of the items, and if the buffer is empty, the consumer must wait for the producer to produce items.</span>"
+            ],
+            "guid": "J6cN+@lcIN",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is direct communication in message passing?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">In direct communication, each process that wants to communicate must explicitly name the recipient or sender of the communication.</span>"
+            ],
+            "guid": "vZsO60}Z^K",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is indirect communication in message passing?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">In indirect communication, messages are sent to and received from mailboxes or ports. A process can communicate with another via a number of different mailboxes.</span>"
+            ],
+            "guid": "IH9#.EHPj%",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div>What is the difference between blocking and nonblocking send/receive?</div><div>*   **Blocking send**: {{c1::The sending process is blocked until the message is received by the receiving process or by the mailbox.}}</div><div>*   **Nonblocking send**: {{c2::The sending process sends the message and continues.}}</div><div>*   **Blocking receive**: {{c3::The receiver blocks until a message is available.}}</div><div>*   **Nonblocking receive**: {{c4::The receiver retrieves either a valid message or a null.}}</div>",
+                ""
+            ],
+            "guid": "y39Xf:v-$%",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div>What are the different types of buffering?</div><div>{{c1::*   **Zero capacity**: The queue has a maximum length of zero; thus, the sender must block until the recipient receives the message.}}</div><div>{{c2::*   **Bounded capacity**: The queue has finite length *n*; thus, at most *n* messages can reside in it.}}</div><div>{{c3::*  **Unbounded capacity**: The queue's length is infinite; thus, any number of messages can wait in the queue.}}</div>",
+                ""
+            ],
+            "guid": "lXLHC+.nN]",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is POSIX shared memory?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">POSIX shared memory is organized using memory-mapped files, which associate the region of shared memory with a file. Processes must first create a shared memory object using the **shm_open()** system call. The **mmap()** function establishes a memory-mapped file containing the shared-memory object.</span>"
+            ],
+            "guid": "l)nBhoEJQ.",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is Mach message passing?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Mach message passing uses messages sent to and received from mailboxes called ports. Each task has a port called the **Task Self port**, and another called the **Notify port**.</span>"
+            ],
+            "guid": "B5%C>(hFGw",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div>What are the two types of messages in Mach?</div><div>{{c1::*   **Fixed-size message**: Contains metadata about the message, including source and destination ports.}}</div><div>{{c2::*   **Variable-sized body**: Contains the actual data.}}</div>",
+                ""
+            ],
+            "guid": "E`mf/L:HEx",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div>What are the different techniques for message passing in Windows ALPC?</div><div>Windows uses the {{c1::advanced local procedure call (ALPC)}} for communication between processes. The three message-passing techniques are:</div><div>{{c2::*   For small messages, the port's message queue is used as intermediate storage.}}</div><div>{{c3::*   For larger messages, a section object (shared memory) is used.}}</div><div>{{c4::*   An API can be used to allow server processes to read and write directly into the address space of a client.}}</div>",
+                ""
+            ],
+            "guid": "zvFiU)gdu_",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div>What are pipes?</div><div>{{c1::A pipe is a conduit allowing two processes to communicate.&nbsp;}}</div><div>{{c2::* **Ordinary pipes** are unidirectional and require a parent-child relationship between communicating processes.&nbsp;}}</div><div>{{c3::* **Named pipes** provide a more powerful tool and allow multiple processes to communicate.}}</div>",
+                ""
+            ],
+            "guid": "pRO2`a2ew4",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div>How are ordinary pipes implemented in UNIX and Windows?</div><div>In UNIX, ordinary pipes are created using the {{c1::**pipe()**}} system call. In Windows, they are created using the {{c2::**CreatePipe()**}} function. Pipes in UNIX are {{c3::inherited by child processes}}, while in Windows, {{c4::they must be explicitly specified}}.</div>",
+                ""
+            ],
+            "guid": "IwwNKL^YG{",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are sockets?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A socket is an endpoint for communication between processes, often across a network. Sockets are identified by an IP address concatenated with a port number.</span>"
+            ],
+            "guid": "yD<63&qcIQ",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are Remote Procedure Calls (RPCs)?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">RPCs are a mechanism for processes on separate systems to communicate and invoke functions on another system. They involve a stub on the client-side and a stub on the server side. A port is a number that is included at the start of a message packet.</span>"
+            ],
+            "guid": "GXWak#F~c`",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is parameter marshaling in RPCs?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Parameter marshaling addresses the differences in data representation between the client and server machines. Data is converted into an external data representation (XDR) on the client side, before being sent to the server, where it is converted to the machine-dependent representation for the server.</span>"
+            ],
+            "guid": "q=[u6DUCQ<",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<div>What is the \"at most once\" and \"exactly once\" semantic in RPCs?</div><div>{{c1::*   **At most once**: The server may receive a message one or more times or not at all.}}</div><div>{{c2::*   **Exactly once**: The server receives the message and executes it only one time, even if the request is sent multiple times.}}</div>",
+                ""
+            ],
+            "guid": "l0ZN5mAzoN",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">How does Android use RPC?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Android uses RPCs through its binder framework for interprocess communication. An application component can provide a service using the **bindService()** method. The **onBind()** method returns an interface that client processes use to interact with the service.</span>"
+            ],
+            "guid": "sY0kl*<PQj",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
             "tags": []
         }
     ],
