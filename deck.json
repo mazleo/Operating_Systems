@@ -644,6 +644,396 @@
             "guid": "CUHRaOH4lT",
             "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
             "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is virtualization?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Virtualization is a technology that allows the abstraction of hardware to create virtual environments for running multiple operating systems on the same physical computer.</span>"
+            ],
+            "guid": "nTX*,X47Pr",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is emulation?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Emulation is when software simulates computer hardware.</span>"
+            ],
+            "guid": "Obx#ss*T$^",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a virtual machine manager (VMM)?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A VMM manages the virtual machines, controls their resource use, and protects them from each other.</span>"
+            ],
+            "guid": "BGD;uB/uEO",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a distributed system?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A distributed system is a collection of separate computer systems that are networked to provide access to shared resources.</span>"
+            ],
+            "guid": "en/{0/Ol,^",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a network?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A network is a communication path between two or more systems. Networks vary based on distance and types of connections [33]. Common types include LANs, WANs, MANs, and PANs.</span>"
+            ],
+            "guid": "i#0~BYFMgt",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a network operating system?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A network operating system provides features such as file sharing across the network. A distributed operating system presents a less autonomous environment.</span>"
+            ],
+            "guid": "hXr&]4!39j",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a disk block?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A medium-sized disk drive might be divided into several thousand individual units, or disk blocks.</span>"
+            ],
+            "guid": "HDM;b;4F3U",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are the key characteristics of traditional computing?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Traditional computing involved PCs connected to a network with servers providing file and print services. Remote access and portability were achieved through technologies such as laptop computers.</span>"
+            ],
+            "guid": "zxE70u}08j",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are thin clients?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Thin clients are essentially terminals that understand web-based computing and are used for more security or easier maintenance.</span>"
+            ],
+            "guid": "u!j~A]3YwN",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is real-time embedded computing?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Real-time embedded systems are used when rigid time requirements have been placed on the operation of a processor. They have limited user interface and often need to respond within a defined time or the system will fail.</span>"
+            ],
+            "guid": "iY6~uN&s1^",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is free and open-source software?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Free software is licensed to allow no-cost use, redistribution, and modification. Open-source software makes the source code available, but does not necessarily offer such licensing.</span>"
+            ],
+            "guid": "Jkzj`2f,P|",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is copyleft?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Copyleft is a form of licensing invented by Stallman that allows a work to be copied, modified, and distributed, but requires that all derivative works must also be licensed under the same copyleft license.</span>"
+            ],
+            "guid": "wUm+1ZI&ip",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are some examples of free and open-source operating systems?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Examples of free and open-source operating systems include:</span><br style=\"color: rgb(19, 19, 20);\"><ul style=\"color: rgb(19, 19, 20);\"><li>{{c1::GNU/Linux}}<br></li><li>{{c2::FreeBSD}}<br></li><li><span style=\"background-color: rgb(255, 255, 255);\">{{c3::Solaris}}</span></li></ul>",
+                ""
+            ],
+            "guid": "w?^-H_arh5",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "List the main services provided by an operating system.<br><ul><li>{{c1::<strong>User Interface:</strong> Provides ways for users to interact with the system (GUI, CLI, touch-screen).}}<br></li><li>{{c2::<strong>Program Execution:</strong> Loads and executes programs.}}<br></li><li>{{c3::<strong>I/O Operations:</strong> Manages input/output devices.}}<br></li><li>{{c4::<strong>File-system Manipulation:</strong> Creates, deletes, and manages files and directories.}}<br></li><li>{{c5::<strong>Communications:</strong> Enables interprocess communication, either locally or across a network.}}<br></li><li>{{c6::<strong>Error Detection:</strong> Detects and handles errors.}}<br></li><li>{{c7::<strong>Resource Allocation:</strong> Manages resources such as CPU, memory, and storage.}}<br></li><li>{{c8::<strong>Logging:</strong> Tracks system usage.}}<br></li><li>{{c9::<strong>Protection and Security:</strong> Controls access to resources and ensures data security.}}<br></li></ul>",
+                ""
+            ],
+            "guid": "utE`bNm:&S",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the three fundamental types of user interfaces provided by operating systems?<br><ul><li>{{c1::<strong>Command-line Interface (CLI):</strong> Allows users to enter commands directly.}}<br></li><li>{{c2::<strong>Graphical User Interface (GUI):</strong> Uses a mouse and icons for interaction.}}<br></li><li>{{c3::<strong>Touch-screen Interface:</strong> Uses touch gestures for interaction.}}<br></li></ul>",
+                ""
+            ],
+            "guid": "HVj6Qr}~sx",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a \"command interpreter\" or \"shell\"?<br><br>A command interpreter or shell is a {{c1::program that reads commands entered by the user and executes them by translating them to system calls}}. It can be a {{c2::special program that is run when the user logs on}}. Examples include the {{c3::Bourne-Again shell (bash)}}, {{c4::C shell}}, and {{c5::Korn shell}}.",
+                ""
+            ],
+            "guid": "bNhLz?Ppn",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a system call?<br><br>A system call is a {{c1::request by a user-level program to access a service provided by the operating system}}. It provides the {{c2::interface between a running program and the operating system}}. System calls are often written in C or C++, but may require assembly language for certain low-level tasks.",
+                ""
+            ],
+            "guid": "J>{.g$_ut`",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is an Application Programming Interface (API)?<br><br>An API {{c1::specifies a set of functions that are available to an application programmer, including the parameters and return values that can be expected}}. An API is a {{c2::higher-level interface built on top of system calls}}. The API makes the system calls more convenient for the programmer.",
+                ""
+            ],
+            "guid": "jj-*~Grigg",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">How are parameters passed during a system call?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Parameters for system calls can be passed in registers, in a block of memory, or on a stack. Linux uses a combination of these approaches.</span>"
+            ],
+            "guid": "l/oy!;iB#r",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the major categories of system calls?<br><ul><li>{{c1::Process Control}}</li><li>{{c2::File Management}}</li><li>{{c3::Device Management}}</li><li>{{c4::Information Maintenance}}</li><li>{{c5::Communications}}</li><li>{{c6::Protection}}</li></ul>",
+                ""
+            ],
+            "guid": "ts{gD0>oY%",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a run-time environment (RTE)?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">The RTE is the full suite of software needed to execute applications written in a given programming language including compilers, interpreters, libraries, and loaders.</span>"
+            ],
+            "guid": "Q)ZPU7sY;>",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a \"boot loader\"?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A boot loader is a small piece of software that loads the operating system kernel into memory when a computer is started. It initializes the system and prepares it for the operating system to take over.</span>"
+            ],
+            "guid": "A,]_?u@QX`",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Describe the concept of a \"monolithic\" operating system structure.</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A monolithic operating system has </span><strong>no structure</strong><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">; all its functionality is contained in a single binary file that runs in a single address space. This approach is simple, but can be difficult to modify or debug. Examples include older versions of UNIX and Linux.</span>"
+            ],
+            "guid": "y+fIO7ayK>",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Describe the \"layered\" operating system structure.</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A layered operating system is divided into </span><strong>multiple layers</strong><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, where each layer depends only on the layers below it. The bottom layer is the hardware, and the highest layer is the user interface. This approach simplifies debugging and system verification.</span>"
+            ],
+            "guid": "HG%3.qG{jF",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Describe the \"microkernel\" operating system structure.</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A microkernel aims to keep the kernel as small as possible, with most operating system services running as user-level processes. This approach improves modularity and security. Communication between processes is typically done using message passing.</span>"
+            ],
+            "guid": "N(@)S<iV3~",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are \"loadable kernel modules\"?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Loadable kernel modules (LKMs) are a way of adding functionality to the operating system kernel at runtime. This approach allows for dynamic modification of the kernel without requiring a reboot. This is a modular approach.</span>"
+            ],
+            "guid": "lYe$Zj6.OZ",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a \"hybrid\" operating system?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A hybrid system combines different architectural approaches, such as monolithic and microkernel. For example, Linux is monolithic, but also supports loadable kernel modules.</span>"
+            ],
+            "guid": "tph5sXr9F4",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the difference between mechanism and policy in operating system design?<br><ul><li>{{c1::<strong>Mechanism</strong> refers to <em>how</em> something is done.}}&nbsp;</li><li>{{c2::<strong>Policy</strong> refers to <em>what</em> is done.&nbsp;}}<br></li></ul>It is good to separate them for {{c3::flexibility}}. A {{c1::mechanism}} can {{c4::implement different policies}}.<br>",
+                ""
+            ],
+            "guid": "x]%mOETh~b",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Why is it important to write an operating system in a high-level language?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Writing in high-level languages like C or C++ makes the code faster to write, more compact, and easier to understand and debug. It also makes the system easier to port to other hardware.</span>"
+            ],
+            "guid": "BXN$K8*Es}",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the purpose of the \"linker\" in the build process?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">The linker combines relocatable object files into a single binary executable file.</span>"
+            ],
+            "guid": "QaZw$YGes[",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the purpose of the \"loader\" in the build process?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">The loader loads the executable file into memory, making it ready to run.</span>"
+            ],
+            "guid": "PfG>nt53Ak",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the main reasons why applications are operating-system specific?<br><ul><li>{{c1::Different binary formats for program executables.}}</li><li>{{c2::Different instruction sets for different CPUs.}}</li><li>{{c3::Different system calls.}}</li></ul>",
+                ""
+            ],
+            "guid": "qba`4Vc?b5",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is an Application Binary Interface (ABI)?<br><br>{{c1::An ABI defines how different components of binary code can interface for a given operating system on a given architecture}}. It includes details about {{c2::data types}}, {{c3::register usage}}, and {{c4::how parameters are passed in system calls}}.",
+                ""
+            ],
+            "guid": "cq^V[3Wz7J",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the two primary goals in designing an operating system?<br><ul><li>{{c1::<strong>User goals:</strong> The system should be convenient to use, easy to learn, reliable, safe, and fast.}}<br></li><li>{{c2::<strong>System goals:</strong> The system should be easy to design, implement, maintain, and should be flexible, reliable, error-free, and efficient.}}<br></li></ul>",
+                ""
+            ],
+            "guid": "cgK?k1-,%B",
+            "note_model_uuid": "baf95efe-c3fc-11ef-add0-7d43f340fc4e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is \"system generation\" or \"system build\"?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">It's the process of configuring an operating system. It specifies which features are included, and varies the configuration based on the system for which the operating system is being built.</span>"
+            ],
+            "guid": "Kb6o4p^Hh,",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is \"debugging\" in the context of operating systems?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Debugging is the process of identifying and fixing errors in both the hardware and the software of a system. It includes failure analysis and performance tuning.</span>"
+            ],
+            "guid": "m?+q+@s8BC",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are \"counters\" in operating system debugging and performance tuning?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Counters are a collection of system-wide or per-process statistics. They keep track of system activity, such as the number of system calls made, or the number of operations on a disk or network.</span>"
+            ],
+            "guid": "BoJV&2|:vl",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is \"tracing\" in operating system debugging and performance tuning?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Tracing involves following the execution of a program, often using system-call invocations, to identify bottlenecks or other performance issues.</span>"
+            ],
+            "guid": "v`sJj#U-vE",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the BCC (BPF Compiler Collection)?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">BCC is a toolkit for dynamic kernel tracing in Linux. It's written in Python, embeds C code, and interfaces with eBPF. This tool helps to debug interactions between the user-level and kernel code.</span>"
+            ],
+            "guid": "nrc~~M%4Ou",
+            "note_model_uuid": "50989b18-bf5d-11ef-b4fe-25358fe4e4db",
+            "tags": []
         }
     ],
     "reviewLimit": null,
