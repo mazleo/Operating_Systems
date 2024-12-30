@@ -1713,6 +1713,216 @@
             "guid": "z|bHJb$#Ww",
             "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
             "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is multiprogramming and why is it important?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Multiprogramming** is a technique where the operating system keeps several processes in memory simultaneously. This is done to **maximize CPU utilization**. When one process waits (e.g., for I/O), the CPU can switch to another process, making the system more efficient.</span>"
+            ],
+            "guid": "zl{;e~+42M",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Describe the cycle of CPU and I/O bursts.<br><br></span><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Processes alternate between periods of&nbsp;</span>{{c1::**CPU execution**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;**(CPU bursts)** and&nbsp;</span>{{c2::waiting for **I/O operations**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;to complete (I/O bursts). Understanding these bursts helps in designing efficient scheduling algorithms.</span>",
+                ""
+            ],
+            "guid": "KSMici#4i[",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the role of the dispatcher in CPU scheduling?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">The **dispatcher** is&nbsp;</span>{{c1::the module that gives control of the CPU to the process selected by the scheduler}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. It is responsible for&nbsp;</span>{{c2::the **context switch**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">,&nbsp;</span>{{c3::switching to user mode}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, and&nbsp;</span>{{c4::jumping to the proper location in the user program}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "vOB[k$oJ.O",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Define dispatch latency.</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Dispatch latency** is the time it takes for the dispatcher to stop one process and start another. Minimizing this latency is important for system performance.</span>"
+            ],
+            "guid": "znRtZ`DTFJ",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a context switch?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A **context switch** is when the operating system saves the state of the old process and loads the saved state of the new process. This allows multiple processes to share the CPU.</span>"
+            ],
+            "guid": "J$l&WuILtD",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the relationship between process scheduling and thread scheduling?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">The terms **process scheduling** and **thread scheduling** are&nbsp;</span>{{c1::often used interchangeably when discussing general scheduling concepts}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. However, in modern operating systems,&nbsp;</span>{{c2::scheduling is often done at the kernel-level for threads, not processes}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "b6*oWfEn_7",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Describe the FCFS scheduling algorithm.</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**FCFS** is the simplest scheduling algorithm where the process that requests the CPU first is allocated the CPU first. It's easy to implement but can lead to **long waiting times for short processes** if they are behind long processes.</span>"
+            ],
+            "guid": "h]-/[nv1y6",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">How does the RR scheduling algorithm work?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">In **RR** scheduling,&nbsp;</span>{{c1::each process is given a fixed amount of CPU time}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;called a&nbsp;</span>{{c2::**time quantum**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. If a process does not finish within its&nbsp;</span>{{c2::quantum}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, it is&nbsp;</span>{{c3::preempted and moved to the end of the ready queue}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. It's designed to be fairer than&nbsp;</span>{{c4::FCFS}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "Hcjz$T3pFu",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Explain priority scheduling.<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Priority scheduling**&nbsp;</span>{{c1::allocates the CPU to the process with the highest priority}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. Processes with the same priority are&nbsp;</span>{{c2::typically scheduled using FCFS}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. Priorities can be assigned using a fixed range of numbers, with lower numbers sometimes indicating higher priority, but there is no universal standard.</span>",
+                ""
+            ],
+            "guid": "z7&03+NL@x",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is multilevel queue scheduling?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">In **multilevel queue scheduling**, the ready queue is divided into separate queues, often based on process characteristics. Processes are permanently assigned to a queue.</span>"
+            ],
+            "guid": "w1iQ48i{(D",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">How does multilevel feedback queue scheduling improve upon multilevel queue scheduling?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Multilevel feedback queue scheduling** allows processes to move between different priority queues. A process that uses too much CPU time may be moved to a lower-priority queue, which helps to prevent starvation and prioritize I/O bound processes.</span>"
+            ],
+            "guid": "t<#l4&,323",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is real-time scheduling?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Real-time scheduling** provides timing guarantees for real-time tasks, which are those with strict time constraints. It is used in systems where tasks must be completed by certain deadlines.</span>"
+            ],
+            "guid": "yW?luzi?do",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Define interrupt latency.</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Interrupt latency** is the time from when an interrupt signal arrives to the start of the interrupt handling routine. Minimizing interrupt latency is important in real-time systems.</span>"
+            ],
+            "guid": "jWH&87`-8J",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is rate-monotonic scheduling?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Rate-monotonic scheduling** is a real-time scheduling algorithm that schedules periodic tasks using a static priority policy with preemption. The priority is assigned based on the frequency of the task, with higher frequency tasks having higher priority.</span>"
+            ],
+            "guid": "jaW@e0v?5B",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">How does EDF scheduling work?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Earliest-deadline-first (EDF) scheduling** is a real-time scheduling algorithm that assigns priorities dynamically based on task deadlines. Tasks with the earliest deadlines get higher priority.</span>"
+            ],
+            "guid": "wWCdlr1Q;7",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the Completely Fair Scheduler?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">The **CFS** is the default scheduler in Linux. It tracks how long each task has run using a \"**virtual run time**\" value and aims to balance the load across multiple cores fairly. It uses a \"**nice**\" value to prioritize tasks, where lower nice values correspond to higher priorities.</span>"
+            ],
+            "guid": "hU+TkVh34D",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What are multicore processors and how do they affect scheduling?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Multicore processors** have&nbsp;</span>{{c1::multiple CPUs (cores) on a single chip}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. Each&nbsp;</span>{{c1::core}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;can have multiple&nbsp;</span>{{c2::**hardware threads**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">, which appear to the OS as&nbsp;</span>{{c3::separate logical CPUs}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. This allows for&nbsp;</span>{{c4::parallel execution of threads}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "ha|t=u-c.g",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Why is load balancing important in multicore systems?</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">**Load balancing** attempts to distribute work evenly across multiple cores in a multicore system. This helps ensure that all cores are utilized and prevent bottlenecks. Load balancing can sometimes increase memory access time.</span>"
+            ],
+            "guid": "NbOSHEZ(FG",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is a hardware thread?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A **hardware thread** is&nbsp;</span>{{c1::a physical resource on a CPU core that can execute a thread}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. When one hardware thread stalls, the&nbsp;</span>{{c2::core can switch to another thread}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. Intel uses&nbsp;</span>{{c3::**hyper-threading**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;or&nbsp;</span>{{c4::**simultaneous multi-threading (SMT)**}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">&nbsp;to&nbsp;</span>{{c5::provide multiple hardware threads on a single core}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">.</span>",
+                ""
+            ],
+            "guid": "J$%bWJWAfd",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">Define scheduling domains.</span>",
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">A **scheduling domain** is a set of CPU cores that can be balanced against one another. Cores within a domain share certain resources like caches. On NUMA systems, these domains can represent NUMA nodes.</span>"
+            ],
+            "guid": "C=hEr>@KGO",
+            "note_model_uuid": "1fbb2cc2-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">What is the difference between SCS and PCS?<br></span><br><span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">With **SCS**, the&nbsp;</span>{{c1::kernel schedules all threads in the system onto available CPUs}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. In contrast, with **PCS**,&nbsp;</span>{{c2::user-level threads are scheduled onto available lightweight processes (LWPs)}}<span style=\"color: rgb(19, 19, 20); background-color: rgb(255, 255, 255);\">. The choice between these depends on the operating system and the implementation of threads.</span>",
+                ""
+            ],
+            "guid": "hP-t,cAF]R",
+            "note_model_uuid": "1fbb32da-c471-11ef-94b4-df15a2c59ac5",
+            "tags": []
         }
     ],
     "reviewLimit": null,
